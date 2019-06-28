@@ -16,7 +16,7 @@ class Album extends Component {
             currentSong: album.songs[0],
             currentTime: 0,
             duration: album.songs[0].duration,
-            currentVolume: 0,
+            currentVolume: 0.5,
             isPlaying: false
 
 
@@ -24,6 +24,7 @@ class Album extends Component {
 
         this.audioElement = document.createElement('audio');
         this.audioElement.src = album.songs[0].audioSrc;
+        this.audioElement.currentVolume = this.state.currentVolume;
 
     }
 
