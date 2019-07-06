@@ -1,10 +1,13 @@
+/* App styles */
+
 .App {
   text-align: center;
+  text-decoration: none;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: auto;
   pointer-events: none;
 }
 
@@ -15,19 +18,146 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  margin-top:60px;
+  display: flex; justify-content: center
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background-image: url("https://i.imgur.com/Nbi7bYI.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+div.space {
+  width:5px;
+  height:auto;
+  display:inline-block;
+}
+
+div.feature {
+  margin-top: 50px;
+  width: 400px;
+  height: auto;
+}
+
+#logo-pic {
+  opacity: 0.7;
+}
+
+#title {
+  font-size: x-large;
+}
+
+div.centered {
+  font-size: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+table#song-list {
+  margin: 0 auto;
+  padding: 10px;
+  width: 1000px;
+  margin-bottom: 50px;
+}
+
+
+
+/* CSS for Logo Pic and Attached Text */
+
+img {
+  border-radius: 16px;
+}
+
+.thumbnail {
+  border-radius: 50%;
+  position: relative;
+  opacity: 1;
+  margin: 0 auto;
+  margin-top:120px;
+}
+
+.caption {
+  color: #78dd39;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  margin: auto;
+}
+
+
+/* Landing page CSS */
+
+
+
+/* Library page CSS for album info */
+
+.library {
+  margin-top: 100px;
+}
+
+#album-cover-library {
+  width: 200px;
+  height: 200px;
+  display: inline;
+}
+
+.album-info-library {
+  color: #2f4f4f;
+
+}
+
+.album-info-library:hover {
+  color: #000000;
+}
+
+
+
+/* Album page CSS for album info */
+
+.album-title-library {
+
+}
+
+#album-info:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+#album-cover-art {
+  width: 400px;
+  height: 400px;
+  display: inline;
+  margin-top: 50px;
+}
+
+#song-list {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+
+
+/*Player Bar Button and Link Styles*/
+
+
+button {
+  color: #d3d3d3;
+  background-color: #2f4f4f;
+  width: 30px;
+  height: 30px;
+  border-radius: 25%;
+
 }

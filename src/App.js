@@ -10,10 +10,6 @@ class App extends Component {
         return (
             <div className="App">
                 <header>
-                    <nav>
-                        <Link to='/'>Landing</Link>
-                        <Link to='/library'>Library</Link>
-                    </nav>
                     <h1>Bloc Jams</h1>
                 </header>
                 <main>
@@ -21,6 +17,11 @@ class App extends Component {
                     <Route path="/library" component={Library}/>
                     <Route path="/album/:slug" component={Album}/>
                 </main>
+                <nav className="navbar fixed-top navbar-expand-sm navbar-light bg-my-primary">
+                    <Link to='/' className="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Home</Link>
+                    <div className="space"></div>
+                    <Link to='/library'className    ="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Library</Link>
+                </nav>
             </div>
         );
     }
